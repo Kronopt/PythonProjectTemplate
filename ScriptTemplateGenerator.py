@@ -5,6 +5,7 @@
 SCRIPT TEMPLATE GENERATOR
 
 TO DO DESCRIPTION
+
 TO DO DEPENDENCIES
 TO DO HOW TO RUN
 TO DO REQUIRES
@@ -17,10 +18,54 @@ __version__ = '0.1'
 __date__ = '21:06h, 27/05/2016'
 __status__ = 'Production'
 
+import os
+import datetime
 
-# imports
+def codeTemplate():
+   '''
+   '''
 
-# code
+   scriptName = 'scriptTemplate.py'
+   shebang = '#!/usr/bin/env python'
+   coding = '# coding: utf-8'
+   title = 'TO DO SCRIPT NAME'
+   description = 'TO DO DESCRIPTION'
+   dependencies = 'TO DO DEPENDENCIES'
+   howToRun = 'TO DO HOW TO RUN'
+   requires = 'TO DO REQUIRES'
+   ensures = 'TO DO ENSURES'
+   _author = ''
+   _credits = []
+   _version = '0.1'
+   _date = '' # DATETIME
+   _status = 'Production'
+   
+   # Verifies if file with the same name exists in the same directory, to avoid overwriting
+   if os.path.isfile(os.path.join(os.getcwd(), scriptName)):
+      print 'Error: File named "' + scriptName + '" already exists"
+   
+   else:
+      try:
+         with open(scriptName, 'wb') as script:
+            script.write('cenaaas')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+      except IOError, e:
+         print 'Error with "' + e.filename + '" file:'
+         print e.strerror
 
 ##def test():
 ##    """ Testing Docstring"""
@@ -28,28 +73,5 @@ __status__ = 'Production'
 ##
 ##if __name__=='__main__':
 ##    test()
-
-
-def codeTemplate(scriptName, shebang, coding, description, dependencies, howToRun, requires, ensures, _author, _credits, _version, _date, _email, _status):
-   '''
-   '''
-
-   # usar os.path.isfile(fname) para verificar se o ficheiro existe antes de fazer overwrite com o novo ficheiro esqueleto...
-
-   try:
-      with open(scriptName + '.py', 'wb') as script:
-         script.write('cenaaas')
-      
-   except IOError, e:
-      if e.errno == 2:         
-         print "Error: the given file doesn't exist."
-      elif e.errno == 9:
-         print e.strerror
-         print
-         print e.errno
-         print e.filename
-         print e.message
-         print e.strerror
-
 
 codeTemplate()
