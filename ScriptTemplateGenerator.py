@@ -92,4 +92,5 @@ def dateVerification(value):
 
     return value
 
-codeTemplate()
+if __name__ == "__main__":
+    codeTemplate()
