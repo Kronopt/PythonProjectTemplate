@@ -5,10 +5,10 @@
 SCRIPT TEMPLATE GENERATOR
 Generates a python script skeleton
 
-DEPENDENCIES
+DEPENDENCIES:
     Python 2.7
 
-HOW TO RUN
+HOW TO RUN:
     Double click script
 '''
 
@@ -18,7 +18,7 @@ import datetime
 __author__ = 'Pedro HC David, https://github.com/Kronopt'
 __credits__ = ['Pedro HC David']
 __version__ = '0.1'
-__date__ = '21:06h, 27/05/2016'
+__date__ = '14:31h, 15/06/2016'
 __status__ = 'Production'
 
 def codeTemplate():
@@ -50,7 +50,7 @@ def codeTemplate():
                 + date + '\n' + status + '\n\n#\n# code\n#\n\n' + defTest
    
     # Verifies if file already exists
-    if os.path.isfile(os.path.join(os.getcwd(), scriptName)):
+    if os.path.isfile(scriptName):
         print 'Error: File named "' + scriptName + '" already exists'
    
     else:
@@ -70,7 +70,7 @@ def dateDefine():
 
     date = datetime.datetime.now()
 
-    # _date verification
+    # date verification
     hour = dateVerification(date.hour)
     minute = dateVerification(date.minute)
     day = dateVerification(date.day)
@@ -81,8 +81,12 @@ def dateDefine():
 
 def dateVerification(value):
     '''
-    Adds a 0 if hour minute or second is between 0 and 9
+    Adds a 0 if hour, minute or second is between 0 and 9
     Used in dateDefine()
+
+    PARAMETERS:
+        value : str/int
+            Represents an hour, minute or second
     '''
 
     value = str(value)
