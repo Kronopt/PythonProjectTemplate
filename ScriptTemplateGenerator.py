@@ -30,7 +30,7 @@ def code_template():
     """
 
     script_name = 'scriptTemplate.py'
-    shebang = '#!/usr/bin/env python'
+    shebang = '#!python2'
     coding = '# coding: utf-8'
     title = 'TO DO SCRIPT NAME'
     description = 'TO DO DESCRIPTION'
