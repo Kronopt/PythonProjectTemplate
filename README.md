@@ -1,8 +1,5 @@
-# ScriptTemplateGenerator
-Generates a python script template (skeleton) with a handful of placeholders
+# PythonProjectTemplate
+Python Project Template/Skeleton
 
-#### Dependencies
-Python 2.7
-
-#### How to run
-Double click ScriptTemplateGenerator.py
+The objective of this repository is to have all the files, folders and style conventions that are usualy part of a standard python project on a single location.
+Just copy the ```Project``` folder to start a new python project.
