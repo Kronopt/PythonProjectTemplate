@@ -1,0 +1,7 @@
+*.pyc
+
+# Pycharm files
+.idea/
+
+# VirtualEnv
+venv/

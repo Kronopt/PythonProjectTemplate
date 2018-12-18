@@ -7,16 +7,7 @@ Just copy the ```Project``` folder to start a new python project.
 
 ## TODO
 * README
-* LICENSE
-* .gitignore
-* tests/
 * docs/
-* .circleci
-* requirements.txt
-* requirements-dev.txt
-* bin/
-* bin/\_\_init__.py
-* Procfile (heroku)
 * .pylintrc
 * setup.py
 * check github for other files to add

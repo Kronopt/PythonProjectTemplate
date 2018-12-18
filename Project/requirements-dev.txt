@@ -1,0 +1,4 @@
+pylint==2.1.1           # style
+Sphinx==1.8.1           # docs
+coverage==4.5.1         # coverage
+tox==3.5.2              # tests
