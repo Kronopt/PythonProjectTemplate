@@ -13,19 +13,7 @@ jobs:
           command: pip install -r requirements.txt --user
       - run:
           name: Run Tests
-          command: python -m unittest tests.test_Main
-
-  py36_tests:
-    docker:
-      - image: circleci/python:3.6.6
-    steps:
-      - checkout
-      - run:
-          name: Install Requirements
-          command: pip install -r requirements.txt --user
-      - run:
-          name: Run Tests
-          command: python -m unittest tests.test_Main
+          command: python -m unittest discover tests
 
   py37_tests:
     docker:
@@ -47,5 +35,4 @@ workflows:
   run_tests:
     jobs:
       - py27_tests
-      - py36_tests
       - py37_tests

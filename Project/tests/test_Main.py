@@ -15,7 +15,7 @@ class TestCase1(unittest.TestCase):
     """
 
     def setUp(self):
-        """initialize whatever is necessary to run tests"""
+        """initialize whatever is necessary to run all tests in this class"""
 
     def test_situation_1(self):
         self.assertFalse('function_to_test(args)')
