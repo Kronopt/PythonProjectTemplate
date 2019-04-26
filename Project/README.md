@@ -1,5 +1,5 @@
 # <Project Name>
-<badges: pypi version, supported python versions, CI, codecov, license>
+<badges: pypi version, supported python versions, CI, codecov, snyk, license>
 
 <small one line description of the project>
 
