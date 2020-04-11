@@ -1,6 +1,10 @@
 #!python
 # coding: utf-8
 
+"""
+Project_name setup
+"""
+
 import Project_name
 
 

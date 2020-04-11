@@ -1,4 +1,4 @@
-#!python2
+#!python
 # coding: utf-8
 
 """
