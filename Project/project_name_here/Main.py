@@ -21,9 +21,11 @@ HOW TO RUN:
 # imports
 
 __author__ = ''
-__credits__ = []
+__email__ = ''
+__credits__ = ['', '']
+__copyright__ = 'Copyright <name> <year>'
 __license__ = ''
-__version__ = '0.1'
+__version__ = '0.0.0'
 
 
 def main(arg1, arg_with_options="default"):
