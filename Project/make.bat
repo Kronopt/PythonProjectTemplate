@@ -34,7 +34,9 @@ python -m pip install -r requirements-dev.txt
 goto:eof
 
 :test
-python -m unittest <tests folder>
+Rem python -m unittest <tests folder>
+Rem python -m pytest tests -vv
+Rem nose2 -s .\tests -t .
 goto:eof
 
 :lint
@@ -42,7 +44,9 @@ python -m pylint <project_folder_name> setup.py
 goto:eof
 
 :coverage
-python -m coverage run --source <project_folder_name> -m unittest <tests folder>
+Rem python -m coverage run --source <project_folder_name> -m unittest <tests folder>
+Rem python -m coverage run --source <project_folder_name> -m pytest tests -q
+Rem python -m coverage run --source <project_folder_name> nose2 -s .\tests -t .
 python -m coverage report -m
 goto:eof
 

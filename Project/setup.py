@@ -49,6 +49,4 @@ setup(
         'Programming Language :: Python :: 3.7',
         '<others>'
     ],
-    test_suite='tests',
-    tests_require=['<packages specifically required for testing>'],
 )

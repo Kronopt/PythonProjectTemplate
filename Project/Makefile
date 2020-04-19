@@ -28,13 +28,17 @@ install-dependencies-test:
 	python -m pip install -r requirements-dev.txt
 
 test:
-	python -m unittest <tests folder>
+    # python -m unittest <tests folder>
+    # python -m pytest tests -vv
+    # nose2 -s ./tests -t .
 
 lint:
 	python -m pylint <project_folder_name> setup.py
 
 coverage:
-    python -m coverage run --source <project_folder_name> -m unittest <tests folder>
+    # python -m coverage run --source <project_folder_name> -m unittest <tests folder>
+    # python -m coverage run --source <project_folder_name> -m pytest tests -q
+    # python -m coverage run --source <project_folder_name> nose2 -s ./tests -t .
     python -m coverage report -m
 
 docs-test:
