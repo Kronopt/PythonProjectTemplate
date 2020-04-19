@@ -29,7 +29,7 @@ When proposing a feature:
 The best way to send feedback is to open an issue in the [issues section](<link to issues>).
 
 ### Get Started!
-<detailed steps on how to setup the Project/script
+<detailed steps on how to setup the Project/script>
 
 * Fork/download repo from github
 * Clone locally / download the repo
@@ -39,11 +39,12 @@ The best way to send feedback is to open an issue in the [issues section](<link 
     $ virtualenv venv/<Project/script name>
     $ cd venv/<Project/script name>/bin
     $ source activate
-    $ pip install -r requirements.txt -r requirements-dev.txt
+    $ make install-dependencies
+    $ install-dependencies-test
     ```
 * Create branch for local development
 * Make changes
-* Test with pylint, coverage, tox and unittest
+* Test with <testing library> and coverage
 * commit changes and push branch to github
 * submit a pull request
 
