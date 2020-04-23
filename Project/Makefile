@@ -1,9 +1,9 @@
-.PHONY: help install-dependencies install-dependencies-test test lint coverage docs-test build build-test release clean clean-pyc clean-tests clean-coverage clean-build
+.PHONY: help install-dependencies install-dependencies-dev test lint coverage docs-test build build-test release clean clean-pyc clean-tests clean-coverage clean-build
 
 help:
 	@echo ""
 	@echo "install-dependencies         installs dependencies"
-	@echo "install-dependencies-test    installs dependencies for testing"
+	@echo "install-dependencies-dev     installs dev dependencies"
 	@echo ""
 	@echo "test                         runs tests"
 	@echo "lint                         runs linter"
@@ -24,7 +24,7 @@ help:
 install-dependencies:
 	python -m pip install -r requirements.txt
 
-install-dependencies-test:
+install-dependencies-dev:
 	python -m pip install -r requirements-dev.txt
 
 test:

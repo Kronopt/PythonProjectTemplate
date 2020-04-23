@@ -6,7 +6,7 @@ goto %~1
 :help
 echo.
 echo install-dependencies           installs dependencies
-echo install-dependencies-test      installs dependencies for testing
+echo install-dependencies-dev       installs dev dependencies
 echo.
 echo test                           runs tests
 echo lint                           runs linter
@@ -29,7 +29,7 @@ goto:eof
 python -m pip install -r requirements.txt
 goto:eof
 
-:install-dependencies-test
+:install-dependencies-dev
 python -m pip install -r requirements-dev.txt
 goto:eof
 
