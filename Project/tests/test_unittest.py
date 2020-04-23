@@ -15,7 +15,16 @@ class TestCase1(unittest.TestCase):
     """
 
     def setUp(self):
-        """initialize whatever is necessary to run all tests in this class"""
+        """
+        initialize whatever is necessary to run all tests in this class
+        runs before each test
+        """
+
+    def tearDown(self):
+        """
+        tidies up after running tests
+        runs after each test in this class
+        """
 
     def test_situation_1(self):
         self.assertFalse('function_to_test(args)')
